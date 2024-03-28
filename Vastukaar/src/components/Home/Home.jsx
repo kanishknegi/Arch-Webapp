@@ -7,13 +7,25 @@ const Home = () => {
           backgroundImage:
             "url('../public/images/pexels-david-besh-884788.jpg')",
           backgroundSize: "cover",
-          height: "300px",
-          width: "300px",
+          height: "100px",
+          width: "100px",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+          borderRadius: "50%",
+          position: "relative",
         }}
       >
-        <h1 style={{ textAlign: "center", padding: "0", margin: "0" }}>Home</h1>
+        <div
+          style={{
+            width: "20px",
+            height: "20px",
+            backgroundColor: "green",
+            borderRadius: "50%",
+            position: "absolute",
+            bottom: "0",
+            right: "1rem",
+          }}
+        ></div>
       </div>
     </>
   );
