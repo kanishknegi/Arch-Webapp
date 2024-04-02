@@ -1,31 +1,21 @@
+import "./home.css";
 const Home = () => {
   return (
     <>
-      {" "}
-      <div
-        style={{
-          backgroundImage:
-            "url('../public/images/pexels-david-besh-884788.jpg')",
-          backgroundSize: "cover",
-          height: "100px",
-          width: "100px",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          borderRadius: "50%",
-          position: "relative",
-        }}
-      >
-        <div
-          style={{
-            width: "20px",
-            height: "20px",
-            backgroundColor: "green",
-            borderRadius: "50%",
-            position: "absolute",
-            bottom: "0",
-            right: "1rem",
-          }}
-        ></div>
+      <div className="hero">
+        <video autoPlay muted loop id="background-video">
+          <source
+            src="../../../public/Videos/2450251-hd_1920_1080_30fps.mp4"
+            type="video/mp4"
+          ></source>
+        </video>
+        <div className="video-text">
+          <h1>Elevate your experience</h1>
+          <p>
+            We shape how everyday people interact with and experience new
+            technologies and services.
+          </p>
+        </div>
       </div>
     </>
   );

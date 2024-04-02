@@ -51,11 +51,12 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 89px;
+    top: 80px;
     right: 16px;
-    background-color: #404040;
+    background-color: black;
     transition: 0.3s ease-in-out;
     color: #fff;
+    z-index: 3;
   }
   .active1 {
     display: none;
