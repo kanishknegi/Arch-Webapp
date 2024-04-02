@@ -4,18 +4,39 @@
   justify-content: space-between;
   padding: 16px;
   background-color: black;
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
 }
 
 .links {
   display: flex;
   text-decoration: none;
-  color: #fff;
   align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.links a {
+  padding: "8px 32px";
+  color: "white !important";
+  &:hover {
+    color: #ffdb00;
+    background-color: #404040;
+    transition: 0.3s ease-in-out;
+  }
 }
 
 .active {
-  text-decoration: underline;
-  background-color: red;
+  /* text-decoration: underline; */
+  color: #ffdb00;
+  background-color: #404040;
   transition: 0.3s ease-in-out;
 }
 
@@ -32,11 +53,15 @@
     position: absolute;
     top: 89px;
     right: 16px;
-    background-color: #444;
+    background-color: #404040;
     transition: 0.3s ease-in-out;
+    color: #fff;
   }
   .active1 {
     display: none;
     transition: 0.3s ease-in-out;
+  }
+  .hamburger {
+    color: #fff;
   }
 }
