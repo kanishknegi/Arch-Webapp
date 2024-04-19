@@ -51,7 +51,7 @@ function Navbar() {
             About Us
           </NavLink>
           <NavLink
-            to="/portfolio"
+            to="/our-work"
             style={{ padding: "8px 32px" }}
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "active" : ""
